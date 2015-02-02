@@ -30,5 +30,5 @@ include('class.contacts-widget.php');
 function register_contacts_widget(){
 	register_widget('Contacts_Widget');
 }
-add_action('widget_init','register_contacts_widget');
+add_action('widgets_init','register_contacts_widget');
 
