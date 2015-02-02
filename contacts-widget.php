@@ -23,3 +23,12 @@ add_action('wp_enqueue_scripts','add_scripts')
  * Include Class
  */
 include ('class.contacts-widget.php');
+
+/*
+ * Register Widget
+ */
+function register_contacts_widget(){
+	register_widget('Contacts_Widget');
+}
+add_action('widget_init','register_contacts_widget');
+
