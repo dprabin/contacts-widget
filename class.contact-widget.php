@@ -20,8 +20,11 @@ class Contacts_Widget extends WP_Widget {
 		$subject = $instance['subject'];
 
 		echo $args['before_widget'];
+
 		if (!empty($title))
 			echo $args['before_title'] . $title . $args['after_title'];
+		//display form
+		echo $this->getForm($recipient,$subject);
 		
 		echo $args['after_widget'];
 	}
