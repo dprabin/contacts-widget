@@ -50,7 +50,7 @@ class Contacts_Widget extends WP_Widget {
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id('recipient'); ?>"><?php _e('Recipient:') ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('recipient'); ?>" name="<?php echo $this->get_field_name('recipient'); type="text" value="<?php echo esc_attr($recipient); ?>" ?>" />
+			<input class="widefat" id="<?php echo $this->get_field_id('recipient'); ?>" name="<?php echo $this->get_field_name('recipient'); ?>" type="text" value="<?php echo esc_attr($recipient); ?>" ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id('subject'); ?>"><?php _e('Subject:') ?></label>
