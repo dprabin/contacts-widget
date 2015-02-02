@@ -17,12 +17,12 @@ function add_scripts(){
 	wp_enqueue_script('contact-scripts', plugins_url().'contacts-widget/js/script.js',array('jquery'),'1.0.0',false);
 }
 //load our function
-add_action('wp_enqueue_scripts','add_scripts')
+add_action('wp_enqueue_scripts','add_scripts');
 
 /*
  * Include Class
  */
-include ('class.contacts-widget.php');
+include('class.contacts-widget.php');
 
 /*
  * Register Widget
