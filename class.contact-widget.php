@@ -59,4 +59,10 @@ class Contacts_Widget extends WP_Widget {
 <?php
 	}
 
+	/*
+	 * Update method to save
+	 */
+	public function update($new_instance, $old_instance){
+
+	}
 }
