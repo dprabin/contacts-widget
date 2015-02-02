@@ -35,7 +35,7 @@ class Contacts_Widget extends WP_Widget {
 	 */
 	public function form($instance){
 		if(isset($instance['title'])){
-			$title = $instance['title']
+			$title = $instance['title'];
 		} else {
 			$title = __('Ajax Contact Widget','text_domain');
 		}
