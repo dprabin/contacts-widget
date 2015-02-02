@@ -50,7 +50,7 @@ class Contacts_Widget extends WP_Widget {
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id('recipient'); ?>"><?php _e('Recipient:') ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('recipient'); ?>" name="<?php echo $this->get_field_name('recipient'); ?>" type="text" value="<?php echo esc_attr($recipient); ?>" ?>" />
+			<input class="widefat" id="<?php echo $this->get_field_id('recipient'); ?>" name="<?php echo $this->get_field_name('recipient'); ?>" type="text" value="<?php echo esc_attr($recipient); ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id('subject'); ?>"><?php _e('Subject:') ?></label>
@@ -78,7 +78,7 @@ class Contacts_Widget extends WP_Widget {
 	public function getForm($recipient, $subject){
 		$output = '
 			<div id="form-message"></div>
-			<form id="ajax-contact" method="post" action="'.plugins_url().'/contacts_widget/mailer.php">
+			<form id="ajax-contact" method="post" action="'.plugins_url().'/contacts-widget/mailer.php">
 				<div class="field"><label for="name">Name:</label><input type="text" id="name" name="name" required /></div>
 				<div class="field"><label for="email">Email:</label><input type="email" id="email" name="email" required /></div>
 				<div class="field"><label for="message">Name:</label><textarea id="message" name="message" required></textarea></div>
